@@ -1,0 +1,7 @@
+**/.vscode
+**/.terraform
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/params.tfvars.json
+**/.DS_Store

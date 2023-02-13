@@ -1,0 +1,2 @@
+business_group,environment,region,exchange,queue,rule,property_name,property_type,matcher_type,value
+example,Sandbox,us-west-2,myTerraformBeautifulExch,myTerraformBeautifulQ,rule_num_compare,nbr_horses,NUMERIC,GT,12
