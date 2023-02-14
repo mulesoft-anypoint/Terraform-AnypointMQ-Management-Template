@@ -53,13 +53,13 @@ variable "q_default_delivery_delay" {
 }
 
 variable "q_encrypted" {
-  type = number
+  type = bool
   default = false
   description = "whether to encrypt by default the queues"
 }
 
 variable "q_fifo" {
-  type = number
+  type = bool
   default = false
   description = "whether to make queues fifo type"
 }
@@ -83,19 +83,19 @@ variable "dlq_default_delivery_delay" {
 }
 
 variable "dlq_encrypted" {
-  type = number
+  type = bool
   default = false
   description = "whether to encrypt by default the dead letter queues"
 }
 
 variable "dlq_fifo" {
-  type = number
+  type = bool
   default = false
   description = "whether to make the dead letter queues fifo"
 }
 
 variable "ex_default_encrypted" {
-  type = number
+  type = bool
   default = false
   description = "whether to encrypt by default the exchanges"
 }
