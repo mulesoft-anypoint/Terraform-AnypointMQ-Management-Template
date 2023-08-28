@@ -1,2 +1,11 @@
-business_group,environment,region,name,encrypted
-example,Sandbox,us-west-2,myTerraformBeautifulExch,false
+[
+  {
+    "business_group": "example",
+    "environments": [
+      "Sandbox"
+    ],
+    "region": "us-west-2",
+    "name": "MyExchange",
+    "encrypted": true
+  }
+]

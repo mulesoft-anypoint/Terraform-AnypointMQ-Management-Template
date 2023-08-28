@@ -1,2 +1,38 @@
-business_group,environment,region,exchange,queue,rule,property_name,property_type,matcher_type,value
-example,Sandbox,us-west-2,myTerraformBeautifulExch,myTerraformBeautifulQ,rule_num_compare,nbr_horses,NUMERIC,GT,12
+[
+  {
+    "business_group": "example",
+    "environments": [
+      "Sandbox"
+    ],
+    "region": "us-west-2",
+    "exchange": "MyExchange",
+    "queue": "Q01",
+    "rule": {
+      "name": "rule_num_compare",
+      "property_name": "nbr_horses",
+      "property_type": "NUMERIC",
+      "matcher_type": "GT",
+      "value": 12
+    }
+  },
+  {
+    "business_group": "example",
+    "environments": [
+      "Sandbox"
+    ],
+    "region": "us-west-2",
+    "exchange": "MyExchange",
+    "queue": "Q02",
+    "rule": {
+      "name": "rule_str_set",
+      "property_name": "horse_name",
+      "property_type": "STRING",
+      "matcher_type": "ANY_OF",
+      "value": [
+        "sunday",
+        "bubble",
+        "moon"
+      ]
+    }
+  }
+]

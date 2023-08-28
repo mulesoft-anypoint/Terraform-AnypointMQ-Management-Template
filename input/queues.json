@@ -1,2 +1,24 @@
-business_group,environment,region,name,default_delivery_delay,default_ttl,default_lock_ttl,dlq,max_deliveries,fifo,encrypted
-example,Sandbox,us-west-2,myTerraformBeautifulQ,0,604800000,900000,,,false,false
+[
+  {
+    "business_group": "example",
+    "environments": [
+      "Sandbox",
+      "Design"
+    ],
+    "region": "us-west-2",
+    "name": "AMQ01"
+  },
+  {
+    "business_group": "example",
+    "environments": [
+      "Sandbox",
+      "Design"
+    ],
+    "region": "us-west-2",
+    "name": "AMQ02",
+    "dlq": "DLQ01",
+    "max_deliveries": 10,
+    "fifo": true,
+    "encrypted": true
+  }
+]
